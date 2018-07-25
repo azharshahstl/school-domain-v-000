@@ -31,7 +31,7 @@ class School
        @roster[grade] << name
      elsif 
        @roster.has_key?[grade] 
-       @roster.has_key?[grade] << name
+       @roster[grade] << name
      else
        @roster[grade] << []
        @roster[grade] << name
