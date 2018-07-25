@@ -25,7 +25,7 @@ class School
   end
   
   def add_student(name, grade)
-    binding.pry
+    #binding.pry
      if @roster.empty?
        @roster[grade] = []
        @roster[grade] << name
