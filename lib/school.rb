@@ -26,12 +26,14 @@ class School
   
   def add_student(name, grade)
    # binding.pry
-     @roster == {} 
-     @roster[grade] = []
-     @roster[grade] << name
-     binding.pry
-     @roster
-   
+     if @roster == {} 
+       @roster[grade] = []
+       @roster[grade] << name
+       binding.pry
+       @roster
+     else 
+       
+     end
   end
   
   def grade=(grade)
