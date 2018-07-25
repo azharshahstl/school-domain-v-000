@@ -31,7 +31,11 @@ class School
        @roster[grade] << name
        binding.pry
        @roster
-     elsif @roster
+     elsif 
+       @roster.has_key?[grade] 
+       @roster.has_key?[grade] << name
+     else
+       @roster[grade] << name
        
      end
   end
