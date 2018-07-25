@@ -29,15 +29,14 @@ class School
      if @roster.empty?
        @roster[grade] = []
        @roster[grade] << name
-       binding.pry
-       @roster
      elsif 
        @roster.has_key?[grade] 
        @roster.has_key?[grade] << name
      else
+       @roster[grade] << []
        @roster[grade] << name
-       
      end
+     @roster
   end
   
   def grade=(grade)
