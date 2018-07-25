@@ -43,8 +43,8 @@ class School
     @grade = grade
   end
   
-  def grade(level)
-    @grade
+  def grade(grade)
+    @roster[grade]
   end
   
   
